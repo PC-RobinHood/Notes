@@ -12,6 +12,7 @@ const typeDefs = `
 scalar Date
 
 type Query {
+  getNote(_id: ID!): Note
   allNotes: [Note]
  }
 

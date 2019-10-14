@@ -10,14 +10,14 @@ export const resolvers = {
     }
   },
   Mutation: {
-      async createContext(root, {input}) {
+      async createNote(root, {input}) {
           return await Note.create(input)
       },
       async updateNote(root, {_id, input}) {
           return await Note.findAndUpdate({_id}, input, {new: true})
       },
       async deleteNote(root, {_id }){
-          return await Note.findOneAndDelete({_id})
+          return await Note.findAndDelete({_id})
       }
   }
 }

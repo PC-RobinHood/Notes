@@ -4,7 +4,7 @@ import mongoose from "mongoose"
 import schema from "./schema"
 
 mongoose.Promise = global.Promise
-mongoose.connect("mongodb://localhost/notetaking_db", {
+mongoose.connect("mongodb://localhost/notestoragedb", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -14,7 +14,7 @@ const PORT = 4300
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Notetaking API v1"
+    message: "NoteStorageDB"
   })
 })
 
@@ -27,5 +27,5 @@ app.use(
 )
 
 app.listen(PORT, () => {
-  console.log(`Server is listening on PORT ${PORT}`);
+  console.log(`Server is listening on PORT ${PORT}`)
 })
