@@ -1,3 +1,4 @@
+import cors from "cors"
 import express from "express"
 import graphlHTTP from "express-graphql"
 import mongoose from "mongoose"
@@ -11,6 +12,8 @@ mongoose.connect("mongodb://localhost/notestoragedb", {
 
 const app = express()
 const PORT = 4300
+
+app.use(cors())
 
 app.get("/", (req, res) => {
   res.json({

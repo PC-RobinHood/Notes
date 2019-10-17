@@ -1,0 +1,26 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "Take notes, edit your notes & delete them when your done. Secure data communication to your personal database.",
+  "main": "index.js",
+  "repository": "https://github.com/PC-RobinHood/notes.git",
+  "author": "Justin Graham <support@pcrobinhood.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/cors": "2.8.6",
+    "@types/mongoose": "5.5.20",
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-stage-0": "6.24.1",
+    "express": "4.17.1",
+    "express-graphql": "0.9.0",
+    "graphql": "14.5.8",
+    "graphql-tools": "4.0.5",
+    "nodemon": "1.19.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js --exec babel-node -e js"
+  }
+}

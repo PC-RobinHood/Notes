@@ -6,7 +6,7 @@ export const resolvers = {
       return await Note.findById(_id)
     },
     async allNotes() {
-      return await Note.findAll()
+      return await Note.find()
     }
   },
   Mutation: {
@@ -14,10 +14,10 @@ export const resolvers = {
           return await Note.create(input)
       },
       async updateNote(root, {_id, input}) {
-          return await Note.findAndUpdate({_id}, input, {new: true})
+          return await Note.findOneAndUpdate({_id}, input, {new: true})
       },
-      async deleteNote(root, {_id }){
-          return await Note.findAndDelete({_id})
+      async deleteNote(root, {_id}){
+          return await Note.findOneAndDelete({_id})
       }
   }
 }
