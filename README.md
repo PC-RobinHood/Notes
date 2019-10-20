@@ -11,7 +11,7 @@
         </td>
         <td align="center">
             <a href="https://pcrobinhood.com/">
-                <img src="https://imgur.com/VnNTI1l" width="100" />
+                <img src="https://i.imgur.com/VnNTI1l" width="100" />
             </a>
         </td>
     </tr>
@@ -19,7 +19,7 @@
 
 Use notes in your environment without relying on an outside codebase.
 
-![Notes App](https://imgur.com/uXWSsYr)
+![Notes App](https://i.imgur.com/uXWSsYr)
 
 # 🎗 Notes — Getting Set up
 
