@@ -17,7 +17,7 @@ function App() {
         >
           <div className="navbar-brand">
             <Link to="/" className="navbar-item">
-              NotesQL
+              Notes App
             </Link>
           </div>
 
