@@ -1,24 +1,3 @@
-<table width="100%">
-    <tr>
-        <td align="left" width="100%" colspan="2">
-            <strong>Notes</strong><br />
-            Personal & secure, web-based note taking app
-        </td>
-    </tr>
-    <tr>
-        <td>
-            A FOSS (Free & Open Source Software) project. Maintained by <a href="https://github.com/PC-RobinHood">@PC-RobinHood</a>.
-        </td>
-        <td align="center">
-            <a href="https://pcrobinhood.com/">
-                <img src="https://i.imgur.com/VnNTI1l.jpg" width="100" />
-            </a>
-        </td>
-    </tr>
-</table>
-
-Use notes in your environment without relying on an outside codebase.
-
 ![Notes App](https://i.imgur.com/uXWSsYr.jpg)
 
 # 🎗 Notes — Getting Set up
@@ -36,4 +15,23 @@ npm -v
 # 6.10.3
 ```
 
-## → Step #2. Download `package.json`
+## → Step #2. Clone and Install
+
+```bash
+# Clone the repo
+git clone https://github.com/PC-RobinHood/notes.git
+
+# Navigate to clonned folder and Install dependencies
+cd notes && yarn install
+```
+
+## → Step #3. Begin & Test
+
+```bash
+# Start the app
+yarn start
+```
+
+## License
+
+[MIT](LICENSE)
